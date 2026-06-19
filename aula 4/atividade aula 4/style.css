@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pangolin&display=swap');
+
+body{
+    background-color:rgb(255, 240, 192);
+}
+
+header {
+    background-color: rgb(255, 219, 102);
+    width: 500px;
+    height: 150px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 50px;
+    color: rgb(168, 129, 0);
+    -webkit-text-stroke: 0.01px rgb(168, 129, 0);
+    text-align: center;
+    font-family: "Pangolin", cursive;
+}
+
+@keyframes piscar {
+    0%, 49% {
+        box-shadow: 0 0 0 7px rgb(225, 168, 178);
+    }
+    50%, 100% {
+        box-shadow: none;
+    }
+}
+.selecionada{
+    margin: 15px;
+    width: 250px;
+    border-radius: 7px;
+    animation: piscar 0.8s infinite;
+}
+
+.imagem{
+    margin: 15px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+button{
+    background-color: #a2f3ff;
+    color: #006878;
+    font-size: 20px;
+    font-family: "Pangolin", cursive;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border-color: #0098b0;
+}
+
+.fotos{
+    display: flex;   
+    flex-direction: row; 
+    gap:30px;
+    justify-content: center; 
+    height: 300px;
+    align-items: center;  
+}
+
+.botoes{     
+    display: flex;   
+    flex-direction: row; 
+    gap:40px;
+    justify-content: center; 
+    height: 100px;
+    align-items: center;  
+}
+
+#escolha{
+    display: none;
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.gif {
+    width: 150px;
+}
+
+#escolhido {
+    width: 600px;
+    border-radius: 20px;
+    padding-bottom: 100px;
+}
