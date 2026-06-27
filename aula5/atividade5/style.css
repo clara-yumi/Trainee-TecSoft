@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'dark';
+    src: url("dark-larch.ttf") format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:monospace;
+    background-color: rgb(251, 226, 230);
+}
+
+header{
+    background-color: pink;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+header h1{
+    font-size: 50px;
+    font-family: 'dark';
+    color: rgb(255, 127, 146);
+}
+
+header nav ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+header nav a{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: ponter;
+}
+
+header nav a:hover{
+    color: rgb(255, 127, 146);
+    text-decoration: underline 2px;
+}
+
+#Origem{
+    background-color: rgb(255, 138, 155);
+    color: rgb(251, 224, 228);
+    font-size: 17px;
+    width: 50rem;
+    margin: 0 auto;
+    margin-top: 6rem;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#Integrantes h2{
+    text-align: center;
+    color: rgb(255, 158, 174);
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+#Albuns h2{
+    text-align: center;
+    color: rgb(255, 155, 171);
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+
+.membros{
+    background-color: rgb(253, 181, 193);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 200px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.membro{
+    text-align: center;
+    color: rgb(181, 75, 91);
+}
+
+.membro img{
+    font-size: 1rem;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.membro p{
+    margin-top: 10px;
+}
+
+.albuns{
+    display: grid;
+    border-radius: 10px;
+    background-color: rgb(253, 181, 193);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.album{
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(181, 75, 91);
+}
+
+.album img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: ponter;
+}
+
+.album:hover img{
+    transform: scale(1.08);
+}
+
+
+.album p{
+    margin-top: 10px;
+}
